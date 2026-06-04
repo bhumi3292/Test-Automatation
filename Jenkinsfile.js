@@ -12,7 +12,6 @@ pipeline {
         stage('Execute Tests') {
             steps {
                 echo 'Running automation framework...'
-                // If you are using Playwright, you might want to change 'npm test' to:
                 bat 'npx playwright test'
             }
         }
